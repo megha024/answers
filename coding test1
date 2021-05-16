@@ -1,4 +1,6 @@
-question-1
+Question 1
+Define an array of numbers (use any random numbers). Write a program in Javascript to print only the even numbers of the array. Do not use any library functions, need to do via for loops only
+
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +25,12 @@ question-1
 
     getEvenNumbers();
     
-    question-2
+    Question 2
+Find the maximum consecutive 1's in an array of 0's and 1's.
+Example:
+a) 00110001001110 - Output :3 [Max num of consecutive 1's is 3]
+b) 1000010001 - Output :1 [Max num of consecutive 1's is 1]
+
     
 const arr = [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1];
 const findMaxConsecutiveOnes = (arr = []) => {
@@ -45,7 +52,10 @@ const findMaxConsecutiveOnes = (arr = []) => {
 }
 console.log(findMaxConsecutiveOnes(arr));
 
-question-3
+Question 3
+Suppose you have an array of 101 integers. This array is already sorted and all numbers in this array are consecutive. Each number only occurs once in the array except one number which occurs twice. Write a js code to find the repeated number.
+e.g $arr = array(0,1,2,3,4,5,6,7,7,8,9,10...................);
+
 
 
 <script>
@@ -68,7 +78,15 @@ var arr_size = arr.length;
 printRepeating(arr, arr_size);
 </script>
 
-question-4
+Question 4
+Assume we have a form e.g
+<form>
+   <input type=”text” name=”firstname” />
+   <input type=”check” name=”checkme” />
+   <input type=”submit” value=”submit”
+</form>
+For the above form, write validation in javascript so that if the firstname is empty or if checkme is not checked, it will not allow the form to submit.
+
 
 function validateForm()
 {
@@ -89,7 +107,11 @@ function validateForm()
    }
 }
 
-question-5
+Question 5
+Support you have a html tag like this 
+<div>Javascript Developer</div>
+Write a small html code to add a class on this div. Add a rounded border box on this div and also there should be a gap of 5px between the text and the rounded box and the text. 
+
 
 <html>
   <head>
@@ -120,7 +142,9 @@ question-5
   </body>
 </html>
 
-question-6
+Question 6
+Write css to center a box on the page. Let’s see we have a blank empty page and we want to create a box of size 100px x 100px and it should be the center of the page always. How will you do it?
+
 
 .overlay {
     position:absolute;
@@ -153,7 +177,10 @@ question-6
     <div class="vref">&nbsp;</div>
 </div>
 
-question-7
+Question 7
+Let’s see we an api url www.example.com/api/get/1 
+Write a sample code to call this url via ajax and print its response
+
 
 fetch("www.example.com/api/get/1")
         
@@ -162,7 +189,17 @@ fetch("www.example.com/api/get/1")
                 console.log(responseData);
             });
 
-question-8
+Question 8
+Assume there is a json object of this format 
+var obj = {
+ “id” : 4, “name” : “abc”,
+ “id” : 10, “name” : “ab2”,
+ “id” : 5, “name” : “abc3”,
+ “id” : 6, “name” : “abc5”
+}
+Write a code to sort the object by id 
+
+
 
 const obj = {
   x1: { 
